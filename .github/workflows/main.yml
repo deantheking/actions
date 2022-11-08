@@ -15,6 +15,6 @@ jobs:
       - env:
           SUPER_SECRET: ${{ secrets.ONE }}
         run: |
-          echo $(( ${{ secrets.ONE }} + 1 ))
+          echo $(( ${{ secrets.SUPER_SECRET }} + 1 ))
       - run: |
           echo $(( ${{ secrets.TWO }} + 1 ))
