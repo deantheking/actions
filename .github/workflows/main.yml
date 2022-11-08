@@ -13,4 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          echo $(( ${{ secrets.ONE }} + 1 ))
+      - run: |
           echo $(( ${{ secrets.TWO }} + 1 ))
